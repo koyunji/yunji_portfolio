@@ -1,0 +1,60 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: chartreuse;
+    padding: 20px 12px;
+}
+
+.navbar_logo a{
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.navbar_menu{
+    display: flex;
+    padding-left: 0;
+}
+.navbar_menu li{
+    padding: 8px 12px;
+    position: relative;
+}
+.navbar_menu li a::before{
+    content: "";
+    height: 1px;
+    width: 0px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+.navbar_menu li a:hover::before{
+    width: 100%;
+    background-color: blue;
+}
+
+.navbar_language{
+    display: flex;
+    padding-right: 40px;
+    padding-left: 0;
+}
+.navbar_language li{
+    padding: 8px 8px;
+
+}
+.navbar_toogleBtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: blue;
+}
+.main{
+    font-size: 60px;
+    padding-left: 100px;
+}
